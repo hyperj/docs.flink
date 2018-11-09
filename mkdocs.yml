@@ -1,20 +1,16 @@
-site_name: Flink Docs
-theme:
-  name: 'material'
-
 # Project information
 site_name: Flink Docs
 site_description: Flink Docs
 site_author: HyperJ
-site_url: https://hyperj.github.io/docs.flink/
+site_url: https://hyperj.net/docs.flink
 
 # Repository
 repo_name: hyperj/docs.flink
 repo_url: https://github.com/hyperj/docs.flink
-edit_uri: ""
+edit_uri: blob/master/docs
 
 # Copyright
-copyright: 'Copyright &copy; 2009 - 2018 HyperJ'
+copyright: 'Copyright &copy; 2013 - 2018 HyperJ'
 
 # Configuration
 theme:
@@ -25,7 +21,7 @@ theme:
     - 404.html
 
   # Don't include MkDocs' JavaScript
-  include_search_page: false
+  include_search_page: true
   search_index_only: true
 
   # Default values, taken from mkdocs_theme.yml
@@ -33,23 +29,21 @@ theme:
   feature:
     tabs: true
   palette:
-    primary: indigo
-    accent: indigo
+    primary: white
+    accent: amber
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/images/flink.ico
-  logo: assets/images/flink.ico
+  favicon: assets/images/hyperj-black.png
+  logo: assets/images/hyperj-black.png
 
 # Customization
 extra:
   social:
-    - type: github-alt
-      link: https://gist.github.com/hyperj/
+    - type: h-square
+      link: https://hyperj.net
     - type: github
       link: https://github.com/hyperj
-    - type: h-square
-      link: http://blog.hyperj.net
     - type: linkedin
       link: https://www.linkedin.com/in/hyperj
 
