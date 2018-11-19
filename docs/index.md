@@ -1,9 +1,8 @@
-# Flink
+# Flink Note
 
 Apache Flink® - Stateful Computations over Data Streams
 
 ![Apache Flink®](assets/images/flink-home-graphic.png)
-
 
 # Reference
 

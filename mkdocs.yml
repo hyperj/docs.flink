@@ -1,12 +1,12 @@
 # Project information
-site_name: Flink Docs
-site_description: Flink Docs
+site_name: Flink Note
+site_description: Flink Note
 site_author: HyperJ
-site_url: https://hyperj.net/docs.flink
+site_url: https://hyperj.net/note.flink
 
 # Repository
-repo_name: hyperj/docs.flink
-repo_url: https://github.com/hyperj/docs.flink
+repo_name: hyperj/note.flink
+repo_url: https://github.com/hyperj/note.flink
 edit_uri: blob/master/docs
 
 # Copyright
