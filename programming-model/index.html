@@ -13,6 +13,8 @@
         <meta name="description" content="Flink Note">
       
       
+        <link rel="canonical" href="https://hyperj.net/note.flink/programming-model/">
+      
       
         <meta name="author" content="HyperJ">
       
@@ -35,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="/note.flink/assets/images/hyperj-black.png">
+      <link rel="shortcut icon" href="../assets/images/hyperj-black.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
     
     
       
-        <title>Flink Note</title>
+        <title>编程模型 - Flink Note</title>
       
     
     
-      <link rel="stylesheet" href="/note.flink/assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="/note.flink/assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -55,7 +57,7 @@
       
     
     
-      <script src="/note.flink/assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
@@ -64,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="/note.flink/assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
   </head>
@@ -102,6 +104,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="../#dataflow-programming-model" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -109,7 +115,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://hyperj.net/note.flink" title="Flink Note" class="md-header-nav__button md-logo">
           
-            <img src="/note.flink/assets/images/hyperj-black.png" width="24" height="24">
+            <img src="../assets/images/hyperj-black.png" width="24" height="24">
           
         </a>
       </div>
@@ -124,7 +130,7 @@
                 Flink Note
               </span>
               <span class="md-header-nav__topic">
-                
+                编程模型
               </span>
             
           
@@ -196,14 +202,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="/note.flink/." title="首页" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="首页" class="md-tabs__link">
         首页
       </a>
     
@@ -215,7 +223,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="/note.flink/programming-model/" title="基础" class="md-tabs__link">
+        <a href="./" title="基础" class="md-tabs__link md-tabs__link--active">
           基础
         </a>
       
@@ -238,7 +246,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://hyperj.net/note.flink" title="Flink Note" class="md-nav__button md-logo">
       
-        <img src="/note.flink/assets/images/hyperj-black.png" width="48" height="48">
+        <img src="../assets/images/hyperj-black.png" width="48" height="48">
       
     </a>
     Flink Note
@@ -274,7 +282,7 @@
 
 
   <li class="md-nav__item">
-    <a href="/note.flink/." title="首页" class="md-nav__link">
+    <a href=".." title="首页" class="md-nav__link">
       首页
     </a>
   </li>
@@ -284,10 +292,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       基础
@@ -303,11 +313,98 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="/note.flink/programming-model/" title="编程模型" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        编程模型
+      </label>
+    
+    <a href="./" title="编程模型" class="md-nav__link md-nav__link--active">
       编程模型
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#levels-of-abstraction" title="Levels of Abstraction" class="md-nav__link">
+    Levels of Abstraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programs-and-dataflows" title="Programs and Dataflows" class="md-nav__link">
+    Programs and Dataflows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-dataflows" title="Parallel Dataflows" class="md-nav__link">
+    Parallel Dataflows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time" title="Time" class="md-nav__link">
+    Time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stateful-operations" title="Stateful Operations" class="md-nav__link">
+    Stateful Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoints-for-fault-tolerance" title="Checkpoints for Fault Tolerance" class="md-nav__link">
+    Checkpoints for Fault Tolerance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-on-streaming" title="Batch on Streaming" class="md-nav__link">
+    Batch on Streaming
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -323,12 +420,117 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#levels-of-abstraction" title="Levels of Abstraction" class="md-nav__link">
+    Levels of Abstraction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#programs-and-dataflows" title="Programs and Dataflows" class="md-nav__link">
+    Programs and Dataflows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parallel-dataflows" title="Parallel Dataflows" class="md-nav__link">
+    Parallel Dataflows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time" title="Time" class="md-nav__link">
+    Time
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stateful-operations" title="Stateful Operations" class="md-nav__link">
+    Stateful Operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkpoints-for-fault-tolerance" title="Checkpoints for Fault Tolerance" class="md-nav__link">
+    Checkpoints for Fault Tolerance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batch-on-streaming" title="Batch on Streaming" class="md-nav__link">
+    Batch on Streaming
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
-
+                
+                  <a href="https://github.com/hyperj/note.flink/blob/master/docs/programming-model.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="dataflow-programming-model">Dataflow Programming Model<a class="headerlink" href="#dataflow-programming-model" title="Permanent link">&para;</a></h1>
+<h2 id="levels-of-abstraction">Levels of Abstraction<a class="headerlink" href="#levels-of-abstraction" title="Permanent link">&para;</a></h2>
+<p><img alt="Levels of Abstraction" src="../assets/images/programming-model/levels_of_abstraction.svg" /></p>
+<h2 id="programs-and-dataflows">Programs and Dataflows<a class="headerlink" href="#programs-and-dataflows" title="Permanent link">&para;</a></h2>
+<p><img alt="Programs and Dataflows" src="../assets/images/programming-model/program_dataflow.svg" /></p>
+<h2 id="parallel-dataflows">Parallel Dataflows<a class="headerlink" href="#parallel-dataflows" title="Permanent link">&para;</a></h2>
+<p><img alt="Parallel Dataflows" src="../assets/images/programming-model/parallel_dataflow.svg" /></p>
+<h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
+<p><img alt="Windows" src="../assets/images/programming-model/windows.svg" /></p>
+<h2 id="time">Time<a class="headerlink" href="#time" title="Permanent link">&para;</a></h2>
+<p><img alt="Time" src="../assets/images/programming-model/event_ingestion_processing_time.svg" /></p>
+<h2 id="stateful-operations">Stateful Operations<a class="headerlink" href="#stateful-operations" title="Permanent link">&para;</a></h2>
+<p><img alt="Stateful Operations" src="../assets/images/programming-model/state_partitioning.svg" /></p>
+<h2 id="checkpoints-for-fault-tolerance">Checkpoints for Fault Tolerance<a class="headerlink" href="#checkpoints-for-fault-tolerance" title="Permanent link">&para;</a></h2>
+<h2 id="batch-on-streaming">Batch on Streaming<a class="headerlink" href="#batch-on-streaming" title="Permanent link">&para;</a></h2>
+<h1 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h1>
+<ul>
+<li><a href="https://ci.apache.org/projects/flink/flink-docs-master/concepts/programming-model.html">Dataflow Programming Model</a></li>
+</ul>
+                
+                  
+                
+              
               
                 
 
@@ -341,6 +543,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="首页" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                首页
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -359,7 +582,7 @@
       
         
   <div class="md-footer-social">
-    <link rel="stylesheet" href="/note.flink/assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://hyperj.net" class="md-footer-social__link fa fa-h-square"></a>
     
@@ -376,9 +599,9 @@
       
     </div>
     
-      <script src="/note.flink/assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"/note.flink"}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
     

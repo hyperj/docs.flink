@@ -2,7 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://hyperj.net/note.flink/</loc>
-     <lastmod>2018-11-20</lastmod>
+     <lastmod>2018-12-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/programming-model/</loc>
+     <lastmod>2018-12-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
