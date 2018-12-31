@@ -1,6 +1,6 @@
 # Project information
-site_name: Flink Note
-site_description: Flink Note
+site_name: Flink 学习笔记
+site_description: Flink 学习笔记
 site_author: HyperJ
 site_url: https://hyperj.net/note.flink
 
@@ -80,6 +80,7 @@ nav:
   - 首页: index.md
   - 基础:
     - 编程模型: programming-model.md
+    - 运行环境: runtime.md
 
 # Analytics
 

@@ -1,4 +1,4 @@
-# Flink Note
+# Flink 学习笔记
 
 Apache Flink® - Stateful Computations over Data Streams
 
@@ -7,4 +7,4 @@ Apache Flink® - Stateful Computations over Data Streams
 ## Reference
 
 - [Flink Site](https://flink.apache.org/)
-- [Flink China](http://flink-china.org/)
+- [Flink(wuchong)](http://wuchong.me/categories/Flink/)
