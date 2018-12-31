@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="Flink Note">
+        <meta name="description" content="Flink 学习笔记">
       
       
         <link rel="canonical" href="https://hyperj.net/note.flink/programming-model/">
@@ -38,11 +38,11 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/hyperj-black.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
     
     
       
-        <title>编程模型 - Flink Note</title>
+        <title>编程模型 - Flink 学习笔记</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../#dataflow-programming-model" tabindex="1" class="md-skip">
+      <a href="#dataflow-programming-model" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -113,7 +113,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="https://hyperj.net/note.flink" title="Flink Note" class="md-header-nav__button md-logo">
+        <a href="https://hyperj.net/note.flink" title="Flink 学习笔记" class="md-header-nav__button md-logo">
           
             <img src="../assets/images/hyperj-black.png" width="24" height="24">
           
@@ -127,7 +127,7 @@
           
             
               <span class="md-header-nav__topic">
-                Flink Note
+                Flink 学习笔记
               </span>
               <span class="md-header-nav__topic">
                 编程模型
@@ -244,12 +244,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="https://hyperj.net/note.flink" title="Flink Note" class="md-nav__button md-logo">
+    <a href="https://hyperj.net/note.flink" title="Flink 学习笔记" class="md-nav__button md-logo">
       
         <img src="../assets/images/hyperj-black.png" width="48" height="48">
       
     </a>
-    Flink Note
+    Flink 学习笔记
   </label>
   
     <div class="md-nav__source">
@@ -342,8 +342,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#levels-of-abstraction" title="Levels of Abstraction" class="md-nav__link">
-    Levels of Abstraction
+  <a href="#levels-of-abstraction" title="抽象层次（Levels of Abstraction）" class="md-nav__link">
+    抽象层次（Levels of Abstraction）
   </a>
   
 </li>
@@ -366,6 +366,26 @@
   <a href="#windows" title="Windows" class="md-nav__link">
     Windows
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#driven" title="驱动（Driven）" class="md-nav__link">
+    驱动（Driven）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows_1" title="窗口（Windows）" class="md-nav__link">
+    窗口（Windows）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -408,6 +428,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../runtime/" title="运行环境" class="md-nav__link">
+      运行环境
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -434,8 +466,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#levels-of-abstraction" title="Levels of Abstraction" class="md-nav__link">
-    Levels of Abstraction
+  <a href="#levels-of-abstraction" title="抽象层次（Levels of Abstraction）" class="md-nav__link">
+    抽象层次（Levels of Abstraction）
   </a>
   
 </li>
@@ -458,6 +490,26 @@
   <a href="#windows" title="Windows" class="md-nav__link">
     Windows
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#driven" title="驱动（Driven）" class="md-nav__link">
+    驱动（Driven）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows_1" title="窗口（Windows）" class="md-nav__link">
+    窗口（Windows）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -508,21 +560,66 @@
                   <a href="https://github.com/hyperj/note.flink/blob/master/docs/programming-model.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="dataflow-programming-model">Dataflow Programming Model<a class="headerlink" href="#dataflow-programming-model" title="Permanent link">&para;</a></h1>
-<h2 id="levels-of-abstraction">Levels of Abstraction<a class="headerlink" href="#levels-of-abstraction" title="Permanent link">&para;</a></h2>
+                <h1 id="dataflow-programming-model">数据流编程模型（Dataflow Programming Model）<a class="headerlink" href="#dataflow-programming-model" title="Permanent link">&para;</a></h1>
+<h2 id="levels-of-abstraction">抽象层次（Levels of Abstraction）<a class="headerlink" href="#levels-of-abstraction" title="Permanent link">&para;</a></h2>
 <p><img alt="Levels of Abstraction" src="../assets/images/programming-model/levels_of_abstraction.svg" /></p>
+<ul>
+<li><code>Low-level</code>层提供基于<code>Process Function</code>编程模型有状态流的简单抽象</li>
+<li><code>Core APIs</code>层提供基于<code>DataStream</code>（有界与无界数据流）和<code>DataSet</code>（有界数据集）的编程接口</li>
+<li><code>Table API</code>层提供以数据表（关系模型）为中心的声明式DSL编程接口，执行前会通过优化器优化</li>
+<li><code>High-level</code>层提供基于<code>SQL</code>的编程接口，基于Calcite进行解析和优化</li>
+</ul>
 <h2 id="programs-and-dataflows">Programs and Dataflows<a class="headerlink" href="#programs-and-dataflows" title="Permanent link">&para;</a></h2>
 <p><img alt="Programs and Dataflows" src="../assets/images/programming-model/program_dataflow.svg" /></p>
+<ul>
+<li>Source</li>
+<li>Transformation</li>
+<li>Sink</li>
+</ul>
 <h2 id="parallel-dataflows">Parallel Dataflows<a class="headerlink" href="#parallel-dataflows" title="Permanent link">&para;</a></h2>
 <p><img alt="Parallel Dataflows" src="../assets/images/programming-model/parallel_dataflow.svg" /></p>
+<p><code>Operators</code>数据传输（依赖）模式：</p>
+<ul>
+<li>One-to-one(forwarding)</li>
+<li>Redistributing</li>
+</ul>
 <h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
 <p><img alt="Windows" src="../assets/images/programming-model/windows.svg" /></p>
+<h3 id="driven">驱动（Driven）<a class="headerlink" href="#driven" title="Permanent link">&para;</a></h3>
+<ul>
+<li>时间驱动（time driven: every 30 seconds）</li>
+<li>数据驱动（data driven: every 100 elements）</li>
+</ul>
+<h3 id="windows_1">窗口（Windows）<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>滚动窗口（tumbling windows: no overlap）</li>
+<li>滑动窗口（sliding windows: with overlap）</li>
+<li>会话窗口（session windows: punctuated by a gap of inactivity）</li>
+</ul>
 <h2 id="time">Time<a class="headerlink" href="#time" title="Permanent link">&para;</a></h2>
 <p><img alt="Time" src="../assets/images/programming-model/event_ingestion_processing_time.svg" /></p>
+<ul>
+<li>事件时间（Event Time）</li>
+<li>摄入时间（Ingestion Time）</li>
+<li>处理时间（Processing Time）</li>
+</ul>
 <h2 id="stateful-operations">Stateful Operations<a class="headerlink" href="#stateful-operations" title="Permanent link">&para;</a></h2>
 <p><img alt="Stateful Operations" src="../assets/images/programming-model/state_partitioning.svg" /></p>
+<ul>
+<li>Keyed &amp; Operator State</li>
+<li>Raw and Managed State</li>
+</ul>
 <h2 id="checkpoints-for-fault-tolerance">Checkpoints for Fault Tolerance<a class="headerlink" href="#checkpoints-for-fault-tolerance" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Checkpoint</li>
+<li>Replay</li>
+</ul>
 <h2 id="batch-on-streaming">Batch on Streaming<a class="headerlink" href="#batch-on-streaming" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Fault tolerance: replay</li>
+<li>Stateful operations: in-memory/out-of-core data structures</li>
+<li>Iteration: superstep based</li>
+</ul>
 <h1 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h1>
 <ul>
 <li><a href="https://ci.apache.org/projects/flink/flink-docs-master/concepts/programming-model.html">Dataflow Programming Model</a></li>
@@ -562,6 +659,20 @@
           </a>
         
         
+          <a href="../runtime/" title="运行环境" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                运行环境
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
       </nav>
     </div>
   
@@ -599,7 +710,7 @@
       
     </div>
     
-      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.5e60981f.js"></script>
       
       <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
