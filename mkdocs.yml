@@ -81,8 +81,11 @@ nav:
   - 基础:
     - 编程模型: programming-model.md
     - 运行环境: runtime.md
-  - Metrics:
+    - 术语: glossary.md
+  - 度量:
     - Metrics: metrics.md
+  - 实践:
+      - 项目与文章: projects-and-articles.md
 
 # Analytics
 
