@@ -37,7 +37,7 @@
 ## Savepoints
 
 - 用于恢复程序（程序升级或集群维护）
-- 通过 REST APIs 或命令手动触发。、
+- 通过 REST APIs 或命令手动触发
 
 # Reference
 
