@@ -82,6 +82,7 @@ nav:
     - 编程模型: programming-model.md
     - 运行环境: runtime.md
     - 术语: glossary.md
+    - 配置: configuration.md
   - 开发:
     - 重启策略: restart-strategy.md
   - 度量:
