@@ -6,3 +6,5 @@
 | taskmanager.heap.size | - | 1024m | 4g, 16g | TaskManager 内存 |
 
 ## Reference
+
+- [Configuration](https://ci.apache.org/projects/flink/flink-docs-master/ops/config.html)

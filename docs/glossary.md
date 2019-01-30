@@ -11,7 +11,7 @@
 
 **Time**
 
-![Time](assets/images/programming-model/event_ingestion_processing_time.svg)
+![Time](assets/images/concepts/programming-model/event_ingestion_processing_time.svg)
 
 - 事件时间（Event Time）
 - 摄入时间（Ingestion Time）

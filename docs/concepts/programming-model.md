@@ -2,7 +2,7 @@
 
 ## 抽象层次（Levels of Abstraction）
 
-![Levels of Abstraction](assets/images/programming-model/levels_of_abstraction.svg)
+![Levels of Abstraction](../assets/images/concepts/programming-model/levels_of_abstraction.svg)
 
 - `Low-level`层提供基于`Process Function`编程模型有状态流的简单抽象
 - `Core APIs`层提供基于`DataStream`（有界与无界数据流）和`DataSet`（有界数据集）的编程接口
@@ -11,7 +11,7 @@
 
 ## Programs and Dataflows
 
-![Programs and Dataflows](assets/images/programming-model/program_dataflow.svg)
+![Programs and Dataflows](../assets/images/concepts/programming-model/program_dataflow.svg)
 
 - Source
 - Transformation
@@ -19,7 +19,7 @@
 
 ## Parallel Dataflows
 
-![Parallel Dataflows](assets/images/programming-model/parallel_dataflow.svg)
+![Parallel Dataflows](../assets/images/concepts/programming-model/parallel_dataflow.svg)
 
 `Operators`数据传输（依赖）模式：
 
@@ -28,7 +28,7 @@
 
 ## Windows
 
-![Windows](assets/images/programming-model/windows.svg)
+![Windows](../assets/images/concepts/programming-model/windows.svg)
 
 ### 驱动（Driven）
 
@@ -43,7 +43,7 @@
 
 ## Time
 
-![Time](assets/images/programming-model/event_ingestion_processing_time.svg)
+![Time](../assets/images/concepts/programming-model/event_ingestion_processing_time.svg)
 
 - 事件时间（Event Time）
 - 摄入时间（Ingestion Time）
@@ -51,7 +51,7 @@
 
 ## Stateful Operations
 
-![Stateful Operations](assets/images/programming-model/state_partitioning.svg)
+![Stateful Operations](../assets/images/concepts/programming-model/state_partitioning.svg)
 
 - Keyed & Operator State
 - Raw and Managed State

@@ -79,14 +79,18 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 基础:
-    - 编程模型: programming-model.md
-    - 运行环境: runtime.md
     - 术语: glossary.md
-    - 配置: configuration.md
-  - 开发:
-    - 重启策略: restart-strategy.md
-  - 度量:
-    - Metrics: metrics.md
+  - 概念:
+    - 编程模型: concepts/programming-model.md
+    - 运行环境: concepts/runtime.md
+  - 应用开发:
+    - 重启策略: dev/restart-strategy.md
+  - 部署与运维:
+    - 配置: ops/configuration.md
+  - 调试和监控:
+    - Metrics: monitoring/metrics.md
+  - 内幕:
+    - 组件: internals/components.md
   - 实践:
       - 项目与文章: projects-and-articles.md
 
