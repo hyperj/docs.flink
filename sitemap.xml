@@ -2,17 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://hyperj.net/note.flink/</loc>
-     <lastmod>2019-01-01</lastmod>
+     <lastmod>2019-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://hyperj.net/note.flink/programming-model/</loc>
-     <lastmod>2019-01-01</lastmod>
+     <loc>https://hyperj.net/note.flink/glossary/</loc>
+     <lastmod>2019-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://hyperj.net/note.flink/runtime/</loc>
-     <lastmod>2019-01-01</lastmod>
+     <loc>https://hyperj.net/note.flink/concepts/programming-model/</loc>
+     <lastmod>2019-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/concepts/runtime/</loc>
+     <lastmod>2019-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/dev/restart-strategy/</loc>
+     <lastmod>2019-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/ops/configuration/</loc>
+     <lastmod>2019-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/monitoring/metrics/</loc>
+     <lastmod>2019-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/internals/components/</loc>
+     <lastmod>2019-08-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://hyperj.net/note.flink/projects-and-articles/</loc>
+     <lastmod>2019-08-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

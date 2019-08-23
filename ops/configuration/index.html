@@ -13,7 +13,7 @@
         <meta name="description" content="Flink 学习笔记">
       
       
-        <link rel="canonical" href="https://hyperj.net/note.flink/">
+        <link rel="canonical" href="https://hyperj.net/note.flink/ops/configuration/">
       
       
         <meta name="author" content="HyperJ">
@@ -42,13 +42,13 @@
     
     
       
-        <title>Flink 学习笔记</title>
+        <title>配置 - Flink 学习笔记</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.0284f74d.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.0284f74d.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/application-palette.01803549.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.01803549.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.74668098.js"></script>
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#flink" tabindex="1" class="md-skip">
+      <a href="#configuration" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                首页
+                配置
               
             </span>
           
@@ -185,14 +185,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="." title="首页" class="md-tabs__link md-tabs__link--active">
+      <a href="../.." title="首页" class="md-tabs__link">
         首页
       </a>
     
@@ -204,7 +206,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="glossary/" title="基础" class="md-tabs__link">
+        <a href="../../glossary/" title="基础" class="md-tabs__link">
           基础
         </a>
       
@@ -217,7 +219,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="concepts/programming-model/" title="概念" class="md-tabs__link">
+        <a href="../../concepts/programming-model/" title="概念" class="md-tabs__link">
           概念
         </a>
       
@@ -230,7 +232,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="dev/restart-strategy/" title="应用开发" class="md-tabs__link">
+        <a href="../../dev/restart-strategy/" title="应用开发" class="md-tabs__link">
           应用开发
         </a>
       
@@ -243,7 +245,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="ops/configuration/" title="部署与运维" class="md-tabs__link">
+        <a href="./" title="部署与运维" class="md-tabs__link md-tabs__link--active">
           部署与运维
         </a>
       
@@ -256,7 +258,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="monitoring/metrics/" title="调试和监控" class="md-tabs__link">
+        <a href="../../monitoring/metrics/" title="调试和监控" class="md-tabs__link">
           调试和监控
         </a>
       
@@ -269,7 +271,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="internals/components/" title="内幕" class="md-tabs__link">
+        <a href="../../internals/components/" title="内幕" class="md-tabs__link">
           内幕
         </a>
       
@@ -282,7 +284,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="projects-and-articles/" title="实践" class="md-tabs__link">
+        <a href="../../projects-and-articles/" title="实践" class="md-tabs__link">
           实践
         </a>
       
@@ -337,49 +339,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        首页
-      </label>
-    
-    <a href="." title="首页" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
       首页
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" title="Reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -408,7 +372,7 @@
 
 
   <li class="md-nav__item">
-    <a href="glossary/" title="术语" class="md-nav__link">
+    <a href="../../glossary/" title="术语" class="md-nav__link">
       术语
     </a>
   </li>
@@ -444,7 +408,7 @@
 
 
   <li class="md-nav__item">
-    <a href="concepts/programming-model/" title="编程模型" class="md-nav__link">
+    <a href="../../concepts/programming-model/" title="编程模型" class="md-nav__link">
       编程模型
     </a>
   </li>
@@ -456,7 +420,7 @@
 
 
   <li class="md-nav__item">
-    <a href="concepts/runtime/" title="运行环境" class="md-nav__link">
+    <a href="../../concepts/runtime/" title="运行环境" class="md-nav__link">
       运行环境
     </a>
   </li>
@@ -492,7 +456,7 @@
 
 
   <li class="md-nav__item">
-    <a href="dev/restart-strategy/" title="重启策略" class="md-nav__link">
+    <a href="../../dev/restart-strategy/" title="重启策略" class="md-nav__link">
       重启策略
     </a>
   </li>
@@ -507,10 +471,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       部署与运维
@@ -526,11 +492,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="ops/configuration/" title="配置" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        配置
+      </label>
+    
+    <a href="./" title="配置" class="md-nav__link md-nav__link--active">
       配置
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -564,7 +568,7 @@
 
 
   <li class="md-nav__item">
-    <a href="monitoring/metrics/" title="Metrics" class="md-nav__link">
+    <a href="../../monitoring/metrics/" title="Metrics" class="md-nav__link">
       Metrics
     </a>
   </li>
@@ -600,7 +604,7 @@
 
 
   <li class="md-nav__item">
-    <a href="internals/components/" title="组件" class="md-nav__link">
+    <a href="../../internals/components/" title="组件" class="md-nav__link">
       组件
     </a>
   </li>
@@ -636,7 +640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="projects-and-articles/" title="项目与文章" class="md-nav__link">
+    <a href="../../projects-and-articles/" title="项目与文章" class="md-nav__link">
       项目与文章
     </a>
   </li>
@@ -690,19 +694,40 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hyperj/note.flink/blob/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hyperj/note.flink/blob/master/docs/ops/configuration.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="flink">Flink 学习笔记<a class="headerlink" href="#flink" title="Permanent link">&para;</a></h1>
-<p>Apache Flink® - Stateful Computations over Data Streams</p>
-<p><img alt="Apache Flink®" src="assets/images/flink-home-graphic.png" /></p>
+                <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">版本</th>
+<th align="left">默认值</th>
+<th align="left">推荐值</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">jobmanager.heap.size</td>
+<td align="left">-</td>
+<td align="left">1024m</td>
+<td align="left">2g, 4g</td>
+<td align="left">JobManager 内存</td>
+</tr>
+<tr>
+<td align="left">taskmanager.heap.size</td>
+<td align="left">-</td>
+<td align="left">1024m</td>
+<td align="left">4g, 16g</td>
+<td align="left">TaskManager 内存</td>
+</tr>
+</tbody>
+</table>
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://flink.apache.org/">Flink Site</a></li>
-<li><a href="https://flink-forward.org/">Flink Forward</a></li>
-<li><a href="http://wuchong.me/categories/Flink/">Flink(wuchong)</a></li>
-<li><a href="http://www.aboutyun.com/forum.php?mod=forumdisplay&amp;fid=443&amp;filter=typeid&amp;typeid=1393">彻底明白Flink系统学习</a></li>
-<li><a href="https://yq.aliyun.com/album/206">Apache Flink 漫谈</a></li>
+<li><a href="https://ci.apache.org/projects/flink/flink-docs-master/ops/config.html">Configuration</a></li>
 </ul>
                 
                   
@@ -724,14 +749,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../../dev/restart-strategy/" title="重启策略" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                重启策略
+              </span>
+            </div>
+          </a>
         
-          <a href="glossary/" title="术语" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../../monitoring/metrics/" title="Metrics" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                术语
+                Metrics
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -758,7 +797,7 @@
       </div>
       
   <div class="md-footer-social">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
       <a href="https://hyperj.net" class="md-footer-social__link fa fa-h-square"></a>
     
@@ -774,9 +813,9 @@
       
     </div>
     
-      <script src="assets/javascripts/application.245445c6.js"></script>
+      <script src="../../assets/javascripts/application.245445c6.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
     
   </body>
